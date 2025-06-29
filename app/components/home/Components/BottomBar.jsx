@@ -40,7 +40,7 @@ const Counter = ({ end }) => {
 };
 
 // Main Stats component that maps through each stat item and shows it with animation
-const Stats = () => {
+const BottomBar = () => {
     return (
         <div className="w-full max-w-5xl px-8 py-6 border border-gray-300 rounded-3xl bg-white/10 backdrop-blur-md shadow-md grid grid-cols-2 md:grid-cols-4 text-center text-white gap-6 max-h-[100vh] overflow-y-auto mx-auto mt-8">
         {stats.map((item, index) => (
@@ -52,7 +52,8 @@ const Stats = () => {
             </div>
         ))}
         </div>
-    );
-};
+    )
+}
 
-export default Stats; // Export the component so it can be used elsewhere
+
+export default BottomBar

@@ -1,9 +1,9 @@
 "use client";
-import Stats from "./Components/Stats";
+import Stats from "./Components/BottomBar.Jsx";
 import React from "react";
 import Left from "./Components/Left";
 import Right from "./Components/Right";
-
+import BottomBar from './Components/BottomBar'
 const Home = () => {
     return (
         <section id="Home" className="px-4 lg:px-12 py-8">
@@ -15,7 +15,7 @@ const Home = () => {
 
         {/* Stats Section - appears below Left & Right */}
         <div className="mt-12 flex justify-center">
-            <Stats />
+            <BottomBar />
         </div>
         </section>
     );
